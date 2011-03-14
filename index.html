@@ -1,31 +1,116 @@
 <html>
 <head>
   <title>Liquidizer</title>
+  <style type="text/css">
+    .content {
+      margin: 0 10% 0 10%;
+    }
+    h1, h2, h3 {
+    font-family: Arial;
+    color: CC0000;
+    }
+    hr {
+    height: 2px;
+    background-color: #660099;
+    }
+    .code {
+      background-color: #ffff99;
+      border: black 1px solid;
+      padding: 5px;
+      margin: 5px;
+    }
+    p {
+      margin: 10px 0 10px 50px;
+      font-family: Arial;
+    }
+  </style>
 </head>
 <body>
+  <img src="img/logo.png"/>
+  <hr/>
+  <div class="content">
   <h1>What is the Liquidizer</h1>
+  <p>
+    The Liquidizer is an interactive voting game.  It is used to find
+    collective answers to a number of conflicting questions or
+    demands. It differs from similar projects
+    like <a href="http://doodle.com"> Doodle</a>
+    or <a href="http://limesurvey.org">LimeSurvey</a>.  The Liquidizer
+    can handle a much larger amount of conflicting questions, because
+    finding the optimal answer is made a collaborative experice. Rich
+    visualizations of conflicting positions, trends, and matches allow
+    for an indepth reflection of a groups own preferences.
+  </p>
 
-  The Liquidizer is an interactive voting game. 
-  It is used to find a collective answer to a number
-  of conflicting questions or demands. It differs 
-  from similar projects like <a href="http://doodle.com">
-  Doodle</a> or <a href="http://limesurvey.com">LimeSurvey</a>.
-  The Liquidizer can handle a much larger amount of conflicting
-  questions, because finding optimal answers is made
-  a collaborative experice. Rich visualizations of conflicting
-  positions, trends, and matches allow for an indepth
-  reflection of a groups own preferences.
+  <h1>Quick overview</h1>
+  <p>
+    The Liquidizer system is designed to make group decisions as easy
+    and as effective as possible. A public instance can be
+    accessed <a href="http://liquidizer.org">here</a>.
+  </p>
+  <h2>Simple voting system</h2>
+  <p>
+    <img src="img/menu1.png"/>
+  </p>
+  <p>
+    Preferences for each question can be cast between -3 and 3.  A
+    limited voting weight will be distributed on the selected issues
+    according to the preferences. Updated results will show up
+    immediately after clicking and can be revised at any time later.
+  </p>
+  <p>
+    <img src="img/voting.png"/>
+  </p>
+  <h2>Social interaction</h2>
+  <p>
+    <img src="img/menu2.png"/>
+  </p>
+  <p>
+    The political match between all candidates is visualized with
+    emoticons. Conflicting positions can be detected quickly and 
+    possibly discussed through discussion.
+  </p>
+  <p>
+    <img src="img/follow.png"/>
+  </p>
+  <h2>Full control over your data</h2>
+  <p>
+    <img src="img/menu_en.png"/>
+  </p>
+  <h2>More  documentation</h2>
+  <p>
+    You can find more documentation on
+    the <a href="http://liquidizer.org/help.html">help page</a> of the
+    Liquidizer.
+  </p>
+  <p>
+    <img src="img/menu3.png"/>
+  </p>
 
   <h1>Installation</h1>
   On Ubuntu you can install the Liquidizer by the following commands:
-  <code>
-  sudo apt-get install git-core maven2 gnuplot graphviz
-  git clone git://github.com/liquidizer/liquidizer.git
-  cd liquidizer
-  mvn jetty:run
-  </code>
+  <div class="code">
+    <code>sudo apt-get install git-core maven2 gnuplot graphviz</code><br/>
+    <code>git clone git://github.com/liquidizer/liquidizer.git</code><br/>
+    <code>cd liquidizer</code><br/>
+    <code>mvn jetty:run</code>
+  </div>
   After that a new Liquidizer instance will be accessible on
   <a href="http://localhost:8080">http://localhost:8080</a>.
+  </div>
 
+  <h1>Links</h1>
+  
+  <ul>
+    <li><a href="http://ssrn.com/abstract=1679002">http://ssrn.com/abstract=1679002</a> Mathematical analysis of the implemented voting system.
+    </li>
+    <li><a href="http://liquidizer.org">http://liquidizer.org</a> A public instance of the software
+    </li>
+  </ul>
+
+  <hr/>
+  Stefan Dirnstorfer
+  <br/>
+  CC-BY
 </body>
 </html>

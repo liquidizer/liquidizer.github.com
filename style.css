@@ -1,0 +1,41 @@
+.content {
+  margin: 0 10% 0 10%;
+}
+h1, h2, h3 {
+font-family: Arial;
+color: CC0000;
+}
+hr {
+height: 2px;
+background-color: #660099;
+}
+p,ul,ol {
+  margin: 10px 0 10px 50px;
+  font-family: Arial;
+}
+pre {
+    margin: 5px;
+}
+img {
+    border: 0px;
+    margin: 0 5px 0 5px;
+}
+.code {
+  background-color: #ffff99;
+  border: black 1px solid;
+  padding: 5px;
+  margin: 5px;
+}
+.caption {
+    font-style: italic;
+    margin: 10px 50px 10px 50px;
+}
+.intro {
+    margin: 10px 0 10px 0;
+}
+.intro td,th {
+    padding: 0 10px 0 10px;
+}
+.intro a {
+    text-decoration: none;
+}

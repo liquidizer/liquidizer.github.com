@@ -1,32 +1,15 @@
 <html>
 <head>
   <title>Liquidizer</title>
-  <style type="text/css">
-    .content {
-      margin: 0 10% 0 10%;
-    }
-    h1, h2, h3 {
-    font-family: Arial;
-    color: CC0000;
-    }
-    hr {
-    height: 2px;
-    background-color: #660099;
-    }
-    .code {
-      background-color: #ffff99;
-      border: black 1px solid;
-      padding: 5px;
-      margin: 5px;
-    }
-    p {
-      margin: 10px 0 10px 50px;
-      font-family: Arial;
-    }
-  </style>
+  <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-  <img src="img/logo.png"/>
+  <div class="content">
+    <a href="index.html" title="Start"><img src="img/logo.png"/></a>
+    <a href="philosophy.html" title="Philosophy"><img src="img/theory_s.png"/></a>
+    <a href="quick.html" title="Quick introduction"><img src="img/help_s.png"/></a>
+    <a href="source.html" title="Source"><img src="img/source_s.png"/></a>  
+  </div>
   <hr/>
   <div class="content">
   <h1>What is the Liquidizer</h1>
@@ -41,78 +24,22 @@
     visualizations of conflicting positions, trends, and matches allow
     for an indepth reflection of a groups own preferences.
   </p>
-
-  <h1>Quick overview</h1>
   <p>
-    The Liquidizer system is designed to make group decisions as easy
-    and as effective as possible. A public instance can be
-    accessed <a href="http://liquidizer.org">here</a>.
+    <table class="intro">
+      <tr>
+	<th><h2><a href="philosophy.html">Philosophy</a></h2></th>
+	<th><h2><a href="quick.html">How does it work?</a></h2></th>
+	<th><h2><a href="source.html">Where is the source?</a></h2></th>
+	<th><h2><a href="http://liquidizer.org">Try it online</a></h2></th>
+      </tr>
+      <tr>
+	<th><a href="philosophy.html"><img src="img/theory.png"></a></th>
+	<th><a href="quick.html"><img src="img/help.png"></a></th>
+	<th><a href="source.html"><img src="img/source.png"/></a></th>
+	<th><a href="http://liquidizer.org"><img src="img/url.png"/></a></th>
+      </tr>
+    </table>
   </p>
-  <h2>Simple voting system</h2>
-  <p>
-    <img src="img/menu1.png"/>
-  </p>
-  <p>
-    Preferences for each question can be cast between -3 and 3.  A
-    limited voting weight will be distributed on the selected issues
-    according to the preferences. Updated results will show up
-    immediately after clicking and can be revised at any time later.
-  </p>
-  <p>
-    <img src="img/voting.png"/>
-  </p>
-  <h2>Social interaction</h2>
-  <p>
-    <img src="img/menu2.png"/>
-  </p>
-  <p>
-    The political match between all users is visualized with
-    emoticons. Conflicting positions can be detected quickly and 
-    possibly resolved with discussion.
-  </p>
-  <p>
-    <img src="img/follow.png"/>
-  </p>
-  <h2>Full control over your data</h2>
-  <p>
-    The Liquidizer provides quick access to all of your settings and
-    your voting behaviour. At any time you can revoke your positions.
-    No history is saved in the system.
-  </p>
-  <p>
-    <img src="img/menu_en.png"/>
-  </p>
-  <h2>More documentation</h2>
-  <p>
-    You can find more documentation on
-    the <a href="http://liquidizer.org/help.html">help page</a> of the
-    Liquidizer.
-  </p>
-  <p>
-    <img src="img/menu3.png"/>
-  </p>
-
-  <h1 id="install">Installation</h1>
-  On Ubuntu you can install the Liquidizer with the following commands:
-  <div class="code">
-    <code>sudo apt-get install git-core maven2 gnuplot graphviz</code><br/>
-    <code>git clone git://github.com/liquidizer/liquidizer.git</code><br/>
-    <code>cd liquidizer</code><br/>
-    <code>mvn jetty:run</code>
-  </div>
-  After that a new Liquidizer instance will be accessible on
-  <a href="http://localhost:8080">http://localhost:8080</a>.
-
-  <h1 id="links">Links</h1>
-  
-  <ul>
-    <li><a href="http://ssrn.com/abstract=1679002">http://ssrn.com/abstract=1679002</a> Mathematical analysis of the implemented voting system.
-    </li>
-    <li><a href="http://liquidizer.org">http://liquidizer.org</a> A public instance of the software
-    </li>
-    <li><a href="http://github.com/liquidizer">http://github.com/liquidizer</a> Public source code repository
-  </ul>
-
   </div>
   <hr/>
   Stefan Dirnstorfer
